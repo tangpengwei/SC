@@ -20,7 +20,17 @@ layui.define('jquery',function (exports) {
                 success:c
 
             })
-        }
+        },
+        // aa:function () {
+        //     jquery.ajax({
+        //         url:arguments[0],
+        //         method:'put',
+        //         data:arguments[1],
+        //         success:arguments[2]
+        //
+        //     })
+        // }
+
     };
 
     exports('liuliuliu',jq);

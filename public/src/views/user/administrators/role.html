@@ -116,7 +116,7 @@
             iframeWindow.layui.form.on('submit(LAY-user-role-submit)', function(data){
               var field = data.field; //获取提交的字段
 
-                console.log(field);
+                // console.log(field);
                 ajax.post('/admin-user',field,function (e) {
                    if (e.code){
                        layer.msg(e.msg);

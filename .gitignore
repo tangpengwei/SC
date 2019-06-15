@@ -4,4 +4,4 @@
 *.log
 thinkphp
 .env
-.DS_Store
+._.DS_Store

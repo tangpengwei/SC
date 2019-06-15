@@ -15,8 +15,16 @@ class User extends Controller
      */
     public function index()
     {
-        //
-        return '显示资源列表';
+        //显示列表
+       $data =  role::paginate(1)->toArray();
+//       print_r($data);
+       return json([
+           'code'=>0,
+           'msg'=>'',
+           'count'=>$data['total'],
+           'data'=>$data['data']
+       ]);
+
     }
 
     /**
